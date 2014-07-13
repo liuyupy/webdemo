@@ -25,7 +25,7 @@ import javax.persistence.Table;
  * @since [产品/模块版本] （可选）
  */
 @Entity(name="user")
-@Table(name="user")
+@Table(name="t_user")
 public class User implements Serializable{
     
     private static final long serialVersionUID = 21898061660159260L;
@@ -35,10 +35,10 @@ public class User implements Serializable{
     @Column(name="id")
     private Long uid;
     
-    @Column(name="name",nullable=false,insertable=true)
+    @Column(name="user_name",nullable=false,insertable=true)
     private String name;
     
-    @Column(name="password",nullable=false,insertable=true)
+    @Column(name="user_password",nullable=false,insertable=true)
     private String password;
     
     public User(){}
