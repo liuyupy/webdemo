@@ -2,17 +2,16 @@
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
   
-  <parent>
-		<groupId>com.liuyu.learn</groupId>
-		<artifactId>pom-parent</artifactId>
+  	<parent>
+		<groupId>com.liuyu.web</groupId>
+		<artifactId>web-pom</artifactId>
 		<version>0.0.1-SNAPSHOT</version>
 	</parent>
   
-  <groupId>com.jyl.loan</groupId>
-  <artifactId>jyl-loan</artifactId>
-  <packaging>war</packaging>
+ 	<artifactId>spring-jdbc</artifactId>
+	<packaging>war</packaging>
+	<name>spring-jdbc</name>
   
-  <name>jyl-loan Maven Webapp</name>
   <url>http://maven.apache.org</url>
   <dependencies>
     <!-- jdbc drivers -->
