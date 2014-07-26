@@ -4,12 +4,12 @@
 	xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 	<modelVersion>4.0.0</modelVersion>
 	<parent>
-		<groupId>com.liuyu.common</groupId>
-		<artifactId>common</artifactId>
+		<groupId>com.liuyu.java</groupId>
+		<artifactId>java-basic</artifactId>
 		<version>0.0.1-SNAPSHOT</version>
 	</parent>
-	<artifactId>common-utils</artifactId>
-	<name>common-utils</name>
+	<artifactId>java-basic-se</artifactId>
+	<name>java-basic-se</name>
 	<url>http://maven.apache.org</url>
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -19,16 +19,6 @@
 			<groupId>ch.qos.logback</groupId>
 			<artifactId>logback-classic</artifactId>
 			<scope>runtime</scope>
-		</dependency>
-		<dependency>
-			<groupId>org.apache.commons</groupId>
-			<artifactId>commons-lang3</artifactId>
-			<version>3.0</version>
-		</dependency>
-		<dependency>
-			<groupId>poi</groupId>
-			<artifactId>poi</artifactId>
-			<version>3.0-FINAL</version>
 		</dependency>
 		<dependency>
 			<groupId>junit</groupId>
