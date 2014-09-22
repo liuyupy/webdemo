@@ -29,5 +29,9 @@
 			<artifactId>junit</artifactId>
 			<scope>test</scope>
 		</dependency>
+		<dependency>
+	        <groupId>com.meidusa.toolkit</groupId>
+	        <artifactId>fastjson</artifactId>
+	    </dependency>
 	</dependencies>
 </project>
