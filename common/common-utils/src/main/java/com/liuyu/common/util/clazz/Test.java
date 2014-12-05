@@ -8,7 +8,7 @@
  * <author>      <time>      <version>    <desc>
  * 修改人姓名             修改时间            版本号                  描述
  */
-package com.liuyu.learn.clazz;
+package com.liuyu.common.util.clazz;
 
 import java.lang.reflect.ParameterizedType;
 import java.lang.reflect.Type;

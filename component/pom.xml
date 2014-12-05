@@ -9,14 +9,14 @@
 		<version>0.0.1-SNAPSHOT</version>
 	</parent>
 
-	<groupId>com.liuyu.opensource</groupId>
-	<artifactId>opensource-apache</artifactId>
+	<groupId>com.liuyu.component</groupId>
+	<artifactId>component</artifactId>
 	<packaging>pom</packaging>
 
-	<name>opensource-apache</name>
+	<name>component</name>
 	<url>http://maven.apache.org</url>
 	
 	<modules>
-		<module>opensource-apache-common</module>
+		<module>apache</module>
 	</modules>
 </project>
