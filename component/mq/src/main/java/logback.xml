@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+    <!-- <statusListener class="ch.qos.logback.core.status.OnConsoleStatusListener" /> -->
+    <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>%d{HH:mm:ss.SSS} %-5level [%thread][%logger{0}] - %m%n
+            </pattern>
+        </encoder>
+    </appender>
+
+    <appender name="FILE" class="ch.qos.logback.core.FileAppender">
+        <file>c:/Logs/saic-logging-sample.log</file>
+        <append>true</append>
+        <encoder>
+            <pattern>%d{HH:mm:ss.SSS} %-5level [%thread][%logger{0}] - %m%n
+            </pattern>
+        </encoder>
+    </appender>
+    
+    <!-- 
+    <appender name="SCRIBE" class="com.ibm.framework.log.ScribeAppender">
+        <scribeHost>192.168.19.210</scribeHost>
+        <scribePort>1463</scribePort>
+        <reconnectionDelay>30000</reconnectionDelay>
+        <layout>
+            <pattern>%d{HH:mm:ss.SSS} %-5level [${HOSTNAME}][%thread][%logger{0}]
+                - %m%n</pattern>
+        </layout>
+        <scribeCategory>saic-logging-sample</scribeCategory>
+    </appender>
+    <appender name="DbAppender" class="ch.qos.logback.classic.db.DBAppender">
+        <connectionSource
+            class="ch.qos.logback.core.db.DriverManagerConnectionSource">
+            <driverClass>com.mysql.jdbc.Driver</driverClass>
+            <url>jdbc:mysql://192.168.19.217:3306/logging_sample</url>
+            <user>root</user>
+            <password>Welcome127</password>
+        </connectionSource>
+    </appender>
+    <logger name="DbLogger" level="debug" additivity="false">
+        <appender-ref ref="DbAppender" />
+    </logger>
+    
+    -->
+    <logger name="com.liuyu" level="debug" additivity="false">
+        <appender-ref ref="STDOUT" />
+    </logger>
+    
+    <root level="info"> 
+        <!--  
+        <appender-ref ref="FILE" />
+        <appender-ref ref="DbAppender" />
+        <appender-ref ref="SCRIBE" />
+        -->
+        <appender-ref ref="STDOUT" />
+    </root> 
+    
+</configuration>

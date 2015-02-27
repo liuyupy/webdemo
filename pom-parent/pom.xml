@@ -28,6 +28,7 @@
 		<servlet-api-version>3.1.0</servlet-api-version>
 		<fastjson-version>1.3.17</fastjson-version>
 		<jedis-version>2.6.0</jedis-version>
+		<activemq-version>5.7.0</activemq-version>
 		
 		<liuyu-common-version>0.0.1-SNAPSHOT</liuyu-common-version>
 	</properties>
@@ -163,7 +164,41 @@
 				<version>1.0.0.GA</version>
 			</dependency>
 
-			<!-- logging related -->
+			<dependency>
+				<groupId>com.meidusa.toolkit</groupId>
+				<artifactId>fastjson</artifactId>
+				<version>${fastjson-version}</version>
+			</dependency>
+			
+			<dependency>
+				<groupId>org.springframework</groupId>
+				<artifactId>spring-webmvc</artifactId>
+				<version>${spring-version}</version>
+			</dependency>
+			
+			<dependency>
+			    <groupId>redis.clients</groupId>
+			    <artifactId>jedis</artifactId>
+			    <version>${jedis-version}</version>
+			    <type>jar</type>
+			    <scope>compile</scope>
+			</dependency>
+			
+			<!-- activemq -->
+			<dependency>
+		        <groupId>org.springframework</groupId>
+		        <artifactId>spring-jms</artifactId>
+		        <version>${spring-version}</version>
+		    </dependency>
+		    <dependency>
+		        <groupId>org.apache.activemq</groupId>
+		        <artifactId>activemq-core</artifactId>
+		        <version>${activemq-version}</version>
+	    	</dependency>
+		</dependencies>
+	</dependencyManagement>
+	<dependencies>
+		<!-- logging related -->
 			<dependency>
 				<groupId>org.slf4j</groupId>
 				<artifactId>slf4j-api</artifactId>
@@ -200,26 +235,5 @@
 				<version>${logback-version}</version>
 				<scope>runtime</scope>
 			</dependency>
-
-			<dependency>
-				<groupId>com.meidusa.toolkit</groupId>
-				<artifactId>fastjson</artifactId>
-				<version>${fastjson-version}</version>
-			</dependency>
-			
-			<dependency>
-				<groupId>org.springframework</groupId>
-				<artifactId>spring-webmvc</artifactId>
-				<version>${spring-version}</version>
-			</dependency>
-			
-			<dependency>
-			    <groupId>redis.clients</groupId>
-			    <artifactId>jedis</artifactId>
-			    <version>${jedis-version}</version>
-			    <type>jar</type>
-			    <scope>compile</scope>
-			</dependency>
-		</dependencies>
-	</dependencyManagement>
+	</dependencies>
 </project>

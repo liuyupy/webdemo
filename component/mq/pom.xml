@@ -4,29 +4,22 @@
 	xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 	<modelVersion>4.0.0</modelVersion>
 	<parent>
-		<groupId>com.liuyu.java</groupId>
-		<artifactId>java-basic</artifactId>
+		<groupId>com.liuyu.component</groupId>
+		<artifactId>component</artifactId>
 		<version>0.0.1-SNAPSHOT</version>
 	</parent>
-	<artifactId>java-basic-se</artifactId>
-	<name>java-basic-se</name>
+	<artifactId>mq</artifactId>
+	<name>mq</name>
 	<url>http://maven.apache.org</url>
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 	</properties>
 	<dependencies>
+
 		<dependency>
-			<groupId>com.liuyu.common</groupId>
-			<artifactId>common-utils</artifactId>
+			<groupId>org.apache.activemq</groupId>
+			<artifactId>activemq-core</artifactId>
 		</dependency>
-		<dependency>
-			<groupId>junit</groupId>
-			<artifactId>junit</artifactId>
-			<scope>test</scope>
-		</dependency>
-		<dependency>
-	        <groupId>com.meidusa.toolkit</groupId>
-	        <artifactId>fastjson</artifactId>
-	    </dependency>
+
 	</dependencies>
 </project>

@@ -18,5 +18,6 @@
 	<modules>
 		<module>apache</module>
     <module>cache</module>
+    <module>mq</module>
   </modules>
 </project>
